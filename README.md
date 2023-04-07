@@ -59,8 +59,8 @@ https://localhost:7020/api/Order
   "orderNumber": "1",
   "itemName": "Herbie Hancock",
   "price": "1000"
-}
-![screen_ApiThunderClient](Img/CallApi.jpg)
+}<br>
+  ![screen_ApiThunderClient](Img/CallApi.jpg)
 
 * Tela de execução do app enviando ordens para fila:<br>
 ![screen_RabbitMQ](Img/ScreenAppRun.jpg)
