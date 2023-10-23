@@ -41,7 +41,9 @@ Seu conteúdo é composto de 1 API emissora e outra consumidora de elementos env
 * Talvez seja necessário baixar e instalar também o Erlang <br>
 <a href="https://www.erlang.org/downloads" target="_blank" rel="noreferrer"> <img src="https://img.shields.io/badge/Erlang-A90533?style=for-the-badge&logo=erlang&logoColor=white"/></a>
 
-* Navegar até a pasta de instalação do RabbitMQ Server, provavelmente c:/Arquivos de Programas/RabbitMQ server/ rabbitmq-server - x x x / sbin e rodar plugin rabbit mq - plugins enable rabbit mq - management
+* Executar o serviço RabbitMQ no Windows, ou no SO escolhido.
+
+* Se não der certo, navegar até a pasta de instalação do RabbitMQ Server, provavelmente c:/Arquivos de Programas/RabbitMQ server/ rabbitmq-server - x x x / sbin e rodar plugin rabbit mq - plugins enable rabbit mq - management
 
 ## Execução
 

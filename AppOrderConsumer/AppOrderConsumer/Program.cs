@@ -27,16 +27,16 @@ consumer.Received += (model, ea) =>
 
         Console.WriteLine($"Order: {order.OrderNumber} | {order.ItemName} | {order.Price:N2}");
 
-        channel.BasicAck(ea.DeliveryTag, false);
+        channel.BasicAck(ea.DeliveryTag, false); //caso de erro e caia no catch, a mensagem volta pra fila.
 
     }
     catch (Exception ex)
     {
-        channel.BasicNack(ea.DeliveryTag, false, true);
+        channel.BasicNack(ea.DeliveryTag, false, true); //caso de erro no try e cair no catch, enviar de volta para a fila  (acima)
     }
 };
 channel.BasicConsume(queue: "orderQueue",
-                     autoAck: false,
+                     autoAck: false, //colocar false para o consumidor não consumir a fila caso de erro no try
                      consumer: consumer);
 
 Console.WriteLine(" Press [enter] to exit.");
